@@ -1,0 +1,92 @@
+{
+  "processName": "testProcessName",
+  "lotNum": 10,
+  "counts": {
+    "received": 1, 
+    "analyzed": 1, 
+    "repaired":0, 
+    "qc":0, 
+    "failed":0, 
+    "ok":1,  
+    "remaining":99
+  },
+  "modelName": "honda fit",
+  "remanModelName": "honda fit reman",
+  "iaor": "",
+  "receiving": {  
+    "unitsTotal": 1024,
+    "containers": [
+      {
+        "num": 1,
+        "count": 10,
+        "serialNums": [ 
+          {
+            "num": "serialNum01",
+            "status": "none|processed"
+          },
+          { 
+            "num": "serialNum02",
+            "status": "none|processed"
+          } 
+        ]
+      },
+      {
+        "num": 2,
+        "count": 8,
+        "serialNums": [ 
+          {
+            "num": "serialNum11",
+            "status": "none|processed"
+          },
+          { 
+            "num": "serialNum12",
+            "status": "none|processed"
+          } 
+        ]
+      }
+    ]    
+  },
+  "packaging": {
+    "availContainers": [
+      { 
+        "num": 0,
+        "count": 24
+      },  
+      { 
+        "num": 2,
+        "count": 53
+      }              
+    ],
+    "notes":"packagage notes",
+    "packagedLot": {
+      "number": 1234,
+      "containers": [
+        1,
+        2,
+        5
+      ]
+    }
+  },
+  "shipping": {
+    "notes":"shipping notes",
+    "availLots": [
+      { 
+        "num":3,
+        "count":24
+      },
+      { 
+        "num":7,
+        "count":27
+      }
+    ],
+    "shipLot": {
+      "num":234,
+      "lots": [
+         1234,
+         4321,
+         5263
+      ]
+    }
+  }
+}
+
