@@ -2,7 +2,7 @@
 <html>
   
   <head>
-    <title>Button Grid Game</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
@@ -124,7 +124,35 @@
           </div>
         </div>
 
-        //
+
+        <%   console.log('Serial Nums:', data[0].receiving.containers);   %>
+        <div class="col-sm-12">
+
+            <table class="table table-striped">
+    
+                 <% _.each(data[0].receiving.containers, function(item) {  %> 
+
+                     <% _.each(item.serialNums, function(item1) {  %> 
+
+                          <% console.log('Item: ', item1);  %>
+
+                            <tr class="active">  
+
+                                  <td>   <%=  item1.num  %>   </td>
+                                  <td>   <%=  item1.status  %>   </td>
+
+                            </tr>
+
+
+
+                      <% });  %>
+
+                  <% });  %>
+
+            </table>
+
+        </div>
+
         
       
         <div class="form-group">
